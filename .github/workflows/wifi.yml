@@ -2,8 +2,6 @@ name: IPQ60XX-wifi
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: 0 19 * * *
 
 env:
   REPO_URL: https://github.com/King-Of-Knights/openwrt-6.x.git
@@ -14,12 +12,12 @@ env:
   CACHE_TOOLCHAIN: true
   UPLOAD_BIN_DIR: false
   FIRMWARE_RELEASE: true
-  FIRMWARE_TAG: IPQ60XX-ALL
+  FIRMWARE_TAG: IPQ60XX-wifi
   TZ: Asia/Shanghai
 
 jobs:
   Build:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
 
     steps:
     - name: Check Server Performance(检查服务器性能)
