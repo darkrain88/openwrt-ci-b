@@ -2,8 +2,6 @@ name: IPQ807X-WIFI
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: 0 19 * * *
 
 env:
   REPO_URL: https://github.com/breeze303/openwrt.git
