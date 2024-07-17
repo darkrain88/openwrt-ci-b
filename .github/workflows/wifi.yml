@@ -1,4 +1,4 @@
-name: IPQ60XX-wifi
+name: IPQ60XX-wifi-config
 
 on:
   workflow_dispatch:
