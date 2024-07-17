@@ -13,7 +13,7 @@ env:
   CACHE_TOOLCHAIN: true
   UPLOAD_BIN_DIR: false
   FIRMWARE_RELEASE: true
-  FIRMWARE_TAG: IPQ60XX-wifi
+  FIRMWARE_TAG: IPQ60XX-wifi-config
   TZ: Asia/Shanghai
 
 jobs:
