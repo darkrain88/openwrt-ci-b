@@ -3,10 +3,9 @@ name: X86-64
 on:
   workflow_dispatch:
 
-
 env:
   REPO_URL: https://github.com/breeze303/openwrt-6.x.git
-  REPO_BRANCH: kernel-6.8
+  REPO_BRANCH: kernel-6.6
   CONFIG_FILE: configs/x86-64.config
   PATCHES_FILE_1: patches/0003-add-coremark-luci.patch
   PATCHES_FILE_2: patches/0004-add-coremark-packages.patch
@@ -160,7 +159,7 @@ jobs:
         body: |
           **This is OpenWrt Firmware for ${{ env.FIRMWARE_TAG }}**
           ### 📒 固件信息(X86-64)
-          - 这是x86-64-6.8kernel
+          - 这是x86-64-6.6kernel
           - 💻 这是 ${{ env.FIRMWARE_TAG }} 平台使用的 OpenWrt 固件
           - ⚽ 固件源码: ${{ env.REPO_URL }}
           - 💝 源码分支: ${{ env.REPO_BRANCH }}
