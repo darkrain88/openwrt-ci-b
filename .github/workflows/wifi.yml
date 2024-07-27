@@ -3,7 +3,7 @@ name: IPQ60XX-wifi-config
 on:
   workflow_dispatch:
   schedule:
-    - cron: 0 16 * * *
+    - cron: 0 18 */3 * *
 env:
   REPO_URL: https://github.com/King-Of-Knights/openwrt-6.x.git
   REPO_BRANCH: main
